@@ -182,4 +182,22 @@ main {
     margin: 16px 16px 50px 16px;
     box-sizing: border-box;
   }
+  .lover-container {
+    flex-direction: column;
+    margin: 16px;
+  }
+  .trusted-badge {
+    display: none;
+  }
+  .lover-container-img {
+    width: 100%;
+    margin-top: 65px;
+  }
+  .lover-title {
+    font-size: 1.5rem;
+    display: inline;
+  }
+  .lover-title-solved {
+    display: none;
+  }
 }
