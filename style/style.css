@@ -11,6 +11,10 @@ main {
   max-width: 1140px;
   margin: 0 auto;
 }
+footer {
+  width: 1440px;
+  margin: 0 auto;
+}
 /* common style */
 .display-flex {
   display: flex;
@@ -94,7 +98,7 @@ main {
   margin-bottom: 50px;
 }
 .card {
-  width: 270px;
+  width: 100%;
 }
 .card-title-container {
   text-align: center;
@@ -116,6 +120,8 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-bottom: 120px;
+  width: 75vw;
+  overflow: hidden;
 }
 /* Plants Lover Section style */
 .lover-title {
@@ -211,6 +217,44 @@ main {
   color: rgba(255, 255, 255, 1);
   font-size: 2.75rem;
 }
+
+/* join section style */
+.join-container {
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover; /* ✅ Cover entire container */
+  background-repeat: no-repeat; /* ✅ Prevent repeat */
+  background-position: center; /* ✅ Keep it centered */
+  height: 533px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  overflow: hidden;
+}
+.join-child-container {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+}
+.footer-title {
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+}
+.join-section-input {
+  padding: 26px 20px;
+  width: 644px;
+  margin-right: 0;
+}
+.footer-btn {
+  padding: 26px 50px;
+  margin-left: 0;
+  gap: 0;
+  background-color: rgba(233, 90, 8, 1);
+  border: none;
+  color: white;
+}
+
 /* media query for mobail responsive */
 @media screen and (max-width: 576px) {
   .iteams {
@@ -229,23 +273,40 @@ main {
     margin: 28px 16px 65px 16px;
     height: 100%;
   }
+  .plants-head-title-container {
+    text-align: center;
+    padding: 0 10px;
+  }
+
   .plants-card-container {
     grid-template-columns: repeat(2, 1fr);
-    margin: 16px;
-    box-sizing: border-box;
-    align-items: center;
-    justify-items: center;
-    padding: 0;
+    padding: 10px;
+    width: 95vw;
   }
+
   .card {
-    width: 171px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
+
   .card-img {
-    width: 180px;
+    width: 100%;
+    height: auto;
   }
-  .primary-btn {
-    padding: 18px 30px;
+
+  .card-title-container {
+    display: block;
+    justify-content: center;
+    padding: 0 10px;
   }
+
+  /* .primary-btn {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  } */
+
   .plants-head-title-container {
     margin: 16px 16px 50px 16px;
     box-sizing: border-box;
@@ -267,39 +328,53 @@ main {
   .lover-title-solved {
     display: none;
   }
+  .lover-discription {
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid tomato;
+    margin: 0;
+  }
   .latest-container-in {
     flex-direction: column;
     margin: 16px;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
   .zabo {
     width: 366px;
     height: 197px;
     background-size: cover;
     border-radius: 15px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
   .latest-right-title {
     font-size: 1.35rem;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: block;
   }
   .latest-right-anchor {
     font-size: 1rem;
-    box-sizing: border-box;
     display: block;
   }
   .latest-discription {
     margin: 16px;
-    box-sizing: border-box;
   }
-  .latest-title {
-    box-sizing: border-box;
+  .join-child-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* optional spacing between input & button */
   }
-  .banner-img {
-    box-sizing: border-box;
+
+  .join-section-input,
+  .footer-btn {
+    width: 90%;
+    padding: 18px 16px; /* adjust padding for smaller screens */
+  }
+
+  .footer-title {
+    font-size: 2rem; /* smaller heading for mobile */
   }
 }
