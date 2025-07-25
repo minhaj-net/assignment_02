@@ -100,6 +100,15 @@ footer {
 .card {
   width: 100%;
 }
+.card-btn {
+  padding: 20px 26px;
+  background-color: rgba(233, 90, 8, 1);
+  color: rgba(255, 255, 255, 1);
+  gap: 10px;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
 .card-title-container {
   text-align: center;
   margin-top: 15px;
@@ -148,6 +157,7 @@ footer {
   position: absolute;
   top: -130px;
   left: 350px;
+  box-shadow: -4px 10px 4px 0 rgba(0, 0, 0, 0.05);
 }
 /* Latest Deal Section style */
 .latest-container {
@@ -390,7 +400,10 @@ footer {
     align-items: center;
   }
   .footer-btn {
-    padding: 26px 14px;
+    padding: 20px 14px;
+  }
+  .join-section-input {
+    padding: 20px 20px;
   }
 
   .footer-title {
