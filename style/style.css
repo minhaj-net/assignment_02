@@ -157,7 +157,16 @@ footer {
   position: absolute;
   top: -130px;
   left: 350px;
-  box-shadow: -4px 10px 4px 0 rgba(0, 0, 0, 0.05);
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.05));
+  animation: spin 1s linear infinite backwards;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(100deg);
+  }
 }
 /* Latest Deal Section style */
 .latest-container {
@@ -183,7 +192,8 @@ footer {
   gap: 40px;
 }
 .bloom {
-  background-image: url(../assets/deal-bloom.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 100%, green),
+    url(../assets/deal-bloom.png);
   width: 366px;
   height: 200px;
   border-radius: 15px;
