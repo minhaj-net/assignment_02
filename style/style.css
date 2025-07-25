@@ -158,14 +158,14 @@ footer {
   top: -130px;
   left: 350px;
   filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.05));
-  animation: spin 1s linear infinite backwards;
+  animation: spin 5s linear infinite backwards;
 }
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(100deg);
+    transform: rotate(360deg);
   }
 }
 /* Latest Deal Section style */
@@ -203,7 +203,8 @@ footer {
   align-content: center;
 }
 .ana {
-  background-image: url(../assets/deal-ana.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 100%, green),
+    url(../assets/deal-ana.png);
   width: 366px;
   height: 197px;
   border-radius: 15px;
@@ -211,7 +212,8 @@ footer {
   align-content: center;
 }
 .zabo {
-  background-image: url(../assets/deal-zabo.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 100%, green),
+    url(../assets/deal-zabo.png);
   width: 753px;
   height: 423px;
   border-radius: 28px;
@@ -384,7 +386,7 @@ footer {
     gap: 16px;
   }
   .zabo {
-    width: 366px;
+    width: 100%;
     height: 197px;
     background-size: cover;
     border-radius: 15px;
